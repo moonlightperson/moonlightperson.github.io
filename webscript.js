@@ -1,3 +1,4 @@
+function() {
 	  if (document.URL != "https://logs.supreme-games.ru/pages/subscription") {
 	   $('.middel').replaceWith('<td class="middel"><div class="box">' +
         '<div class="boxtitle">Добрый день</div>' +
@@ -6,4 +7,4 @@
 				'<br><br>Logs size 3468344 in BD supremenew    ');
 	} else {
 	   return false;
-	}
+}}
