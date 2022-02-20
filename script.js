@@ -1,5 +1,3 @@
-  $(document).ready(() => {
-  
 	  if (document.URL != "https://logs.supreme-games.ru/pages/subscription") {
 	   $('.middel').replaceWith('<td class="middel"><div class="box">' +
         '<div class="boxtitle">Добрый день</div>' +
@@ -9,5 +7,3 @@
 	} else {
 	   return false;
 	}
-  
-})();
