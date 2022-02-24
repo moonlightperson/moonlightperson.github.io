@@ -29,7 +29,7 @@ var main = function() {
         }, 200);
         
     $('body').animate({
-            left: '0px'
+            left: '-285px'
         }, 200);
     });
 
@@ -40,7 +40,7 @@ var main = function() {
         }, 200);
         
     $('body').animate({
-            left: '0px'
+            left: '-285px'
         }, 200);
     });
 };
