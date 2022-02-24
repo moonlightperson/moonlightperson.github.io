@@ -25,6 +25,13 @@ var main = function() {
 
 $('.icon-open-dbut').click(function() {
         $('.buttons1').animate({
+            top: '285px'
+        }, 200);
+        
+};
+                           
+$('.icon-close-dbut').click(function() {
+        $('.buttons1').animate({
             top: '-285px'
         }, 200);
         
