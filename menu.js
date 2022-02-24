@@ -27,19 +27,11 @@ var main = function() {
         $('.buttons1').animate({
             left: '0px'
         }, 200);
-        
-    $('body').animate({
-            left: '-285px'
-        }, 200);
     });
 
 /* Закрытие ПодМеню*/
     $('.closedbut1').click(function() {
         $('.buttons1').animate({
-            left: '-285px'
-        }, 200);
-        
-    $('body').animate({
             left: '-285px'
         }, 200);
     });
