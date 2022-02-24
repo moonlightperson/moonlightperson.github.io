@@ -23,20 +23,26 @@ var main = function() {
     });
 
 /* Открытие ПодМеню*/
-    $('.icon-open-dbut').click(function() {
+   $('.opendbut1').click(function() {
         $('.buttons1').animate({
-            top: '285px'
+            left: '0px'
         }, 200);
         
-    };
+    $('body').animate({
+            left: '0px'
+        }, 200);
+    });
 
 /* Закрытие ПодМеню*/
-    $('.icon-close-dbut').click(function() {
+    $('.closedbut1').click(function() {
         $('.buttons1').animate({
-            top: '-285px'
+            left: '-285px'
         }, 200);
         
-    };
+    $('body').animate({
+            left: '0px'
+        }, 200);
+    });
 };
 
 $(document).ready(main);
