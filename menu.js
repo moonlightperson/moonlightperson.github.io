@@ -21,7 +21,7 @@ var main = function() {
             left: '0px'
         }, 200);
     });
-    
+
 /* Открытие ПодМеню*/
     $('.icon-open-dbut').click(function() {
         $('.buttons1').animate({
@@ -29,7 +29,7 @@ var main = function() {
         }, 200);
         
     };
-                               
+
 /* Закрытие ПодМеню*/
     $('.icon-close-dbut').click(function() {
         $('.buttons1').animate({
@@ -39,6 +39,4 @@ var main = function() {
     };
 };
 
-
-                            
 $(document).ready(main);
