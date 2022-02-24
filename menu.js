@@ -1,26 +1,33 @@
 /* Открытие меню */
-var main = function() { //главная функция
-    $('.icon-menuforum').click(function() { //выбираем класс icon-menu и добавляем метод click с функцией, вызываемой при клике
-        $('.menuforum').animate({ //выбираем класс menu и метод animate
-            left: '0px' //теперь при клике по иконке, меню, скрытое за левой границей на 285px, изменит свое положение на 0px и станет видимым
-        }, 200); //скорость движения меню в мс
+var main = function() {
+    $('.icon-menuforum').click(function() {
+        $('.menuforum').animate({
+            left: '0px'
+        }, 200);
         
-        $('body').animate({ //выбираем тег body и метод animate
-            left: '285px' //чтобы всё содержимое также сдвигалось вправо при открытии меню, установим ему положение 285px
-        }, 200); //скорость движения меню в мс
+        $('body').animate({
+            left: '285px'
+        }, 200);
     });
 
 
 /* Закрытие меню */
-    $('.icon-close').click(function() { //выбираем класс icon-close и метод click
-        $('.menuforum').animate({ //выбираем класс menu и метод animate
-            left: '-285px' //при клике на крестик меню вернется назад в свое положение и скроется
-        }, 200); //скорость движения меню в мс
+    $('.icon-close').click(function() {
+        $('.menuforum').animate({
+            left: '-285px'
+        }, 200);
         
-    $('body').animate({ //выбираем тег body и метод animate
-            left: '0px' //а содержимое страницы снова вернется в положение 0px
-        }, 200); //скорость движения меню в мс
+    $('body').animate({
+            left: '0px'
+        }, 200);
     });
 };
 
-$(document).ready(main); //как только страница полностью загрузится, будет вызвана функция main, отвечающая за работу меню
+$('.icon-open-dbut').click(function() {
+        $('.buttons1').animate({
+            top: '-285px'
+        }, 200);
+        
+};
+
+$(document).ready(main);
