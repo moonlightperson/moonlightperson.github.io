@@ -21,20 +21,24 @@ var main = function() {
             left: '0px'
         }, 200);
     });
-};
-
-$('.icon-open-dbut').click(function() {
+    
+/* Открытие ПодМеню*/
+    $('.icon-open-dbut').click(function() {
         $('.buttons1').animate({
             top: '285px'
         }, 200);
         
-};
-                           
-$('.icon-close-dbut').click(function() {
+    };
+                               
+/* Закрытие ПодМеню*/
+    $('.icon-close-dbut').click(function() {
         $('.buttons1').animate({
             top: '-285px'
         }, 200);
         
+    };
 };
 
+
+                            
 $(document).ready(main);
