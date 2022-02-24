@@ -21,20 +21,6 @@ var main = function() {
             left: '0px'
         }, 200);
     });
-
-/* Открытие ПодМеню*/
-   $('.opendbut1').click(function() {
-        $('.buttons1').animate({
-            left: '0px'
-        }, 200);
-    });
-
-/* Закрытие ПодМеню*/
-    $('.closedbut1').click(function() {
-        $('.buttons1').animate({
-            left: '-285px'
-        }, 200);
-    });
 };
 
 $(document).ready(main);
