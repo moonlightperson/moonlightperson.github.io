@@ -5,3 +5,10 @@ function getButton(one, two) {
 export function ggBet(arg) {
     return `Arg: ${arg}`;
 }
+
+"use strict";
+
+exports.testFunc = function (){
+    console.log("Hello World!!!");
+}
+
