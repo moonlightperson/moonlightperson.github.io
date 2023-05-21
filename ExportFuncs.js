@@ -1,4 +1,4 @@
-export function addButton(name, id) {
+export function getButton(name, id) {
     return `<button type="button" class="button rippleButton" id="${id}" style="margin: 3px;">${name}</button>`;
 }
 
