@@ -1,7 +1,5 @@
-export function addButton($, name, id) {
-    $('.button--icon--reply').after(
-        `<button type="button" class="button rippleButton" id="${id}" style="margin: 3px;">${name}</button>`,
-    );
+export function addButton(name, id) {
+    return `<button type="button" class="button rippleButton" id="${id}" style="margin: 3px;">${name}</button>`;
 }
 
  export function addMenuButton(name, id) {
