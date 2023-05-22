@@ -17,7 +17,6 @@
         const threadData = getThreadData();
         
         $(`button#selectAnswer`).click(() => {
-	    $('.overlay-container.ovelay').append('<div class="overlay-title"><a href="https://vk.com/moon.light7777"><i class="fa-brands fa-vk"></i></a></div>');
             XF.alert(
                 buttonsMarkup(buttons), 
                 null, 
