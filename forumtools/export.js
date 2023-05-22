@@ -1,3 +1,10 @@
+// =InfoScript==
+// @name         Auto-responses
+// @namespace    https://vk.com/moon.light7777
+// @version      2.0
+// @description  Tools for XenForo forums
+// @author       Tyoma Shilkin
+
 (function () {
 	'use strict';
     
