@@ -1,0 +1,96 @@
+button#selectAnswer:before {
+	font-family: 'Font Awesome 6 Pro';
+    content: '\e1d0';
+    width: 25px;
+}
+button#selectAnswer {
+    border: 1px solid transparent;
+    border-color: #c72a2a #9c2121 #9c2121 #c72a2a;
+}
+.button.button--icon--preview>.button-text:before, a.button.button--icon--preview>.button-text:before {
+	font-size: large;
+}
+button.u-jsOnly.button.button--icon.button--icon--preview {
+    display: none;
+}
+button#xf-preview-shilkin {
+    background: #ff000000;
+    margin-block-end: -5px;
+}
+button#xf-preview-shilkin:before {
+	font-family: 'Font Awesome 6 Pro';
+    content: '\f06e';
+    color: #e0e6f0;
+    margin-top: -1px;
+}
+div#select_prefix {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #c72a2a;
+}
+.button.button--primary.panelButton {
+    width: 213px;
+    background: #22242b;
+    border: 1px solid transparent;
+    border-color: inherit;
+    margin: 5px;
+}
+.button.button--primary.panelButton:hover {
+    background: #31333a;
+}
+.button.button--link.menuButton {
+    color: #e0e6f0;
+	border: 1px solid transparent;
+    border-color: #c72a2a #9c2121 #9c2121 #c72a2a;
+    width: 172.4px;
+}
+.button.button--link.menuButton:before {
+    width: 21px;
+    font-family: 'Font Awesome 6 Pro';
+    content: "\f06c";
+    font-weight: 900;
+	background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    -webkit-background-clip: text;
+    background-clip: text;
+  	-webkit-text-fill-color: transparent;
+    background-size: 1800% 1800%;
+    animation: AnimGradient 18s ease infinite;
+    border: 20px;
+    border-color: #000;
+}
+
+.button.button--primary.panelSeparator-typeone {
+    background: none;
+    border: 2px solid transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    width: 94%;
+}
+
+.button.button--primary.panelSeparator-typetwo {
+    background: none;
+    border-bottom: 2px solid transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+    width: 95%;
+}
+
+.button.button--primary.panelSeparator-typethree {
+    background: none;
+    border: 3px solid transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    width: 93.6%;
+    height: 0px;
+}
+
+/* KeyFrames */
+
+@keyframes AnimGradient { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
