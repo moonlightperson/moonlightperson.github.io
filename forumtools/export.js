@@ -1,10 +1,3 @@
-// =InfoScript==
-// @name         Auto-responses
-// @namespace    https://vk.com/moon.light7777
-// @version      2.0
-// @description  Tools for XenForo forums
-// @author       Tyoma Shilkin
-
 (function () {
 	'use strict';
     
@@ -52,7 +45,7 @@
         .map(
             (btn, i) =>
                 `<button type="button" id="answers-${i}" class="button--primary button ` +
-                `rippleButton ${system.separators[btn.separator] || 'panelButton'}" style="border-color:${btn.color}"><span class="button-text">${btn.title}</span></button>`,
+                `rippleButton ${btn.separator || 'panelButton'}" style="border-color:${btn.color}"><span class="button-text">${btn.title}</span></button>`,
         )
         .join('')}</div>`;
     }
