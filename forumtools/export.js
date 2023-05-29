@@ -62,13 +62,16 @@
     function getThreadData() {
         const authorID = $('a.username')[0].attributes['data-user-id'].nodeValue;
         const authorName = $('a.username').html();
-        const hours = new Date().getHours();
+        const date = new Date();
+        const hours = date.getHours();
         return {
             user: {
                 id: authorID,
                 name: authorName,
                 mention: `[USER=${authorID}]${authorName}[/USER]`,
             },
+            time: `${date.getUTCHours()}:${date.getUTCMinutes()}:${date.getUTCSeconds()}`,
+            date: `${date.getUTCDay()}.${date.getUTCMonth()}.${date.getUTCFullYear()}`,
             greeting: () =>
             4 < hours && hours <= 11
                 ? 'Доброе утро'
