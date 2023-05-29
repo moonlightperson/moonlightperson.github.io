@@ -70,8 +70,14 @@
                 name: authorName,
                 mention: `[USER=${authorID}]${authorName}[/USER]`,
             },
-            time: `${date.getUTCHours()}:${date.getUTCMinutes()}:${date.getUTCSeconds()}`,
-            date: `${date.getUTCDay()}.${date.getUTCMonth()}.${date.getUTCFullYear()}`,
+            time: {
+                utc: `${date.getUTCHours()}:${date.getUTCMinutes()}:${date.getUTCSeconds()}`,
+                local: `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`
+            },
+            date: {
+                utc: `${date.getUTCDate()}.${date.getUTCMonth()}.${date.getUTCFullYear()}`,
+                local: `${date.getDate()}.${date.getMonth()}.${date.getFullYear()}`
+            },
             greeting: () =>
             4 < hours && hours <= 11
                 ? 'Доброе утро'
