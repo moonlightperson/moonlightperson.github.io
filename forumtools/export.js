@@ -61,7 +61,7 @@
   
     function getThreadData() {
         const authorID = $('a.username')[0].attributes['data-user-id'].nodeValue;
-        const authorName = $('a.username').html();
+        const authorName = $('.message-threadStarterPost')[0].attributes['data-author'].nodeValue;
         const date = new Date();
         const hours = date.getHours();
         return {
