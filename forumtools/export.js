@@ -64,6 +64,7 @@
         const authorName = $('.message-threadStarterPost')[0].attributes['data-author'].nodeValue;
         const date = new Date();
         const hours = date.getHours();
+	    
         return {
             user: {
                 id: authorID,
