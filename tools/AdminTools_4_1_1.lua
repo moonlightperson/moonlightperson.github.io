@@ -1,5 +1,5 @@
 ---@diagnostic disable: undefined-global, deprecated, need-check-nil, redundant-parameter, param-type-mismatch
-script_version_number(13)
+script_version_number(12)
 script_name("AdminTools")
 script_properties('work-in-pause')
 
