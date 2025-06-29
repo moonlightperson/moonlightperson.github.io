@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вопросы и ответы по истории Казахстана</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f8f9fa; color: #222; margin: 0; padding: 0; }
+        .container { max-width: 900px; margin: 30px auto; background: #fff; border-radius: 10px; box-shadow: 0 2px 8px #0001; padding: 32px; }
+        h1 { text-align: center; }
+        .qa { margin-bottom: 32px; padding-bottom: 18px; border-bottom: 1px solid #e0e0e0; }
+        .question { font-weight: bold; font-size: 1.1em; margin-bottom: 8px; }
+        .options { margin-bottom: 6px; }
+        .option { display: block; margin-left: 18px; }
+        .answer { color: #0a7d2c; font-weight: bold; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Вопросы и ответы по истории Казахстана</h1>
+    <div id="qa-list"></div>
+</div>
+<script>
+// Загружаем вопросы и ответы из файлов через fetch
+Promise.all([
+    fetch('questions.json').then(r => r.json()),
+    fetch('answers.json').then(r => r.json())
+]).then(([questions, answers]) => {
+    const qaList = document.getElementById('qa-list');
+    qaList.innerHTML = '';
+    questions.forEach(q => {
+        const div = document.createElement('div');
+        div.className = 'qa';
+        const qNum = q.id;
+        div.innerHTML = `<div class="question">${qNum}. ${q.question}</div>`;
+        const opts = document.createElement('div');
+        opts.className = 'options';
+        q.options.forEach((opt, idx) => {
+            const isCorrect = answers[qNum] === idx;
+            opts.innerHTML += `<span class="option${isCorrect ? ' answer' : ''}">${String.fromCharCode(65+idx)}) ${opt}${isCorrect ? ' ← правильный ответ' : ''}</span>`;
+        });
+        div.appendChild(opts);
+        qaList.appendChild(div);
+    });
+});
+</script>
+</body>
+</html>
